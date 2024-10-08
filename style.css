@@ -1,0 +1,240 @@
+ /* necessary css properties */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+   /* background-color: rgb(235, 227, 156);    */
+   font-family:'Times New Roman', Times, serif;
+}
+/*  navigaationbar styling start here */
+/* styling contain padding marging color like properties */
+header  .navigation{
+    /* background-color:violet; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.left h1{
+    color: rgb(174, 244, 178);
+    font-size: 200%;
+}
+.left{
+    display: flex;
+    align-items: center;
+    
+}
+.left img{
+    width: 8%;
+    height: 6%;
+}
+.right ul li{
+    display: inline;
+    list-style: none;
+    padding: 10px 20px 10px 40px;
+    font-size: 150%;
+    
+    
+}
+.right ul li :hover{
+   color: rgb(149, 242, 152);
+   font-size: 200%;
+}
+.right ul li a{
+     text-decoration:none ;
+     color: white;
+}
+.background{
+    background:rgb(0, 0, 0,0.7) url(nature3.jpg);
+    background-size: cover;
+    /* height: 100vw; */
+    background-blend-mode: darken;
+}
+/* home page styling */
+#mainsection{
+    height: 100vh;
+}
+.section1{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+    /* background-color: white; */
+    /* padding: 20px 20px ; */
+    height: 80%;
+}
+.leftsection{
+    width: 120%;
+}
+.rightsection{
+    width: 150%;
+
+}
+.leftsection p{
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    
+}
+.section1 .rightsection img{
+    width: 90%;
+    height: 60%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+    /* margin: 106px 0; */
+
+}
+.leftsection h1{
+    font-size: 312%;
+    color: rgb(174, 244, 171);
+    font-weight: bolder;
+}
+.section2{
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* background-color: rgb(245, 245, 245); */
+    /* border: 3px solid green; */
+    border-radius: 10px;
+    max-width: 60%;
+    height: 80%;
+    margin: 10% auto;
+}
+
+.leftsection2 img{
+    margin: 11px 26px 0px 20px;
+    width: 60%;
+    height: 92%;
+    border-radius: 15px;
+    filter: drop-shadow(10px 10px 20px black) ;
+    
+}
+
+.rightsection2{
+    
+    
+    width: 300%;
+    
+    margin: 20px;
+    
+}
+.rightsection2 h1{
+    font-size: 312%;
+    color: orange;
+    font-weight: bolder;
+    
+}
+.rightsection2 p{
+    font-size: 150%;
+    color: rgb(249, 179, 48);
+    font-weight: bolder;
+}
+#aboutme{
+    background-color: rgb(235, 234, 234);
+    /* height: 40vw;
+    width: 50vw; */
+    
+}
+#aboutme .myintro{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding-top: 20px;
+    height: 40vw;
+    max-width: 59vw;
+    
+}
+.rightintro img{
+    width: 25vw;
+    height: 33vw;
+    filter: drop-shadow(10px 10px 20px black) ;
+}
+.leftintro h1{
+    font-size: 370%;
+}
+.leftintro .p1{
+font-size: 250%;
+}
+.leftintro .p2{
+    font-size: 150%;
+    }
+
+    .photobox .box{
+        display: flex;
+        justify-content: space-around;
+    }
+    .photobox .box img{
+        width: 10vw;
+        height: 10vw;
+        filter: drop-shadow(10px 10px 20px black) ;
+        
+    }
+    footer .foot{
+        background-color: black;
+        height: 8vw;
+        /* justify-content: center; */
+        /* align-items: center; */
+        text-align: center;
+        margin-top: 60px;
+        padding: 25px;
+        
+    }
+    footer .foot ul li{
+        list-style: none;
+    }
+    footer .foot ul li a{
+        font-size: 150%;
+        text-decoration: none;
+        color: rgb(249, 248, 248);
+    }
+    .burger{
+        display: none;
+      position: absolute;
+      cursor: pointer;
+      right: 1%;
+      top: 5px;
+    }
+    .line{
+      width: 33px;
+      background-color: rgb(249, 248, 248);
+      height: 4px;
+      margin: 3px 3px;
+    }
+    /* using media query */
+    /* For responsivenes in a website */
+    @media only screen and (max-width:1342px)
+    {
+        header  .navigation{
+            flex-direction: column;
+        }
+        .navigation .right{
+            flex-direction: column;
+        }
+        .burger{
+            display: block;
+        }
+        .h-nav-resp{
+            height: 72px;
+        }
+        .v-class-resp{
+            opacity:0;
+        }
+        #mainsection{
+            flex-direction: column-reverse;
+            max-width: 100%;
+        }
+        #explore{
+            flex-direction: column;
+            max-width: 100%;
+        }
+    }
